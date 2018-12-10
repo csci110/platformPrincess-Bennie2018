@@ -8,7 +8,21 @@ wall.x = 0;
 wall.y = 175;
 wall.accelerateOnBounce = false;
 
-/*let Rwall = new Sprite();
-Rwall.name = "rightwall";
-Rwall.setImage("wall.png");
-*/
+class Support extends Sprite(){
+    constructor (x,y,image){
+        this.x =this.x;
+        this.y =this.y;
+        this.setImage(image);
+    }
+}
+
+class Platform extends Support(){
+    constructor(x,y,image){
+        this.x =this.x;
+        this.y=this.y;
+        this.setImage(image);
+        this.name = "A platform";
+        this.accelerateOnBounce = false;
+    }
+
+}
